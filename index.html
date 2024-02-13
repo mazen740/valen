@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Mono&family=Noto+Serif+JP:wght@200&family=Playfair+Display&family=Rubik+Broken+Fax&family=Single+Day&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojin is Love</title>
+    <link rel="icon" href="https://media1.tenor.com/m/VSxlAnMklw0AAAAC/anime-hug-for-you.gif" type="image/gif">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="main.js"></script>
+</head>
+<body id="body"> 
+    <div class="loader">
+        <span class="loader__element"></span>
+        <span class="loader__element"></span>
+        <span class="loader__element"></span>
+    </div>
+    
+    <div id="popupContainer">
+        <div id="popupContent">
+            <button id="closePopup"></button>
+            <h2>Will you be my valentine? </h2>
+            <p id="note">روح قلبي ونور عيوني حابب اقولك كل عيد حب وانت معايا يا اجمل ما عرفت وربنا يديمك ليا يا رب طول عمري وحابب اشكرك انك موجودة في حياتي وواقفة جنبي   وبتحاولي تفرحيني دايما وبتستحملي الصعب علشاني  بحبك من قلبي اوي  <3    
+            </p>
+           
+        </div>
+    </div>
+    
+    <button id="musicButton" onclick="initiatePlayback()"><span class="click">click me</span> 🔈</button>
+
+    <div id="heartRateControl">
+        <label for="heartRateSlider">Heart-speed</label>
+        <input id="heartRateSlider" type="range" min="50" max="700" step="5" value="300" onchange="updateHeartRate()">
+    </div>
+
+    <audio src="bg.mp3" id="bgMusic" loop  autoplay ></audio>
+    <audio id="popSound" hidden><source src="pop.mp3" type="audio/mp3"></audio>
+
+    <div class="click-catcher"></div>
+
+    <header>
+        <h1 class="hero-text"></h1>
+        <p class="quote">Loading quote...</p>
+    </header>
+    
+    <canvas id="waterCanvas"></canvas>
+
+    <p class="love">From your love-Mazen</p>
+    
+
+</body>
+</html>
